@@ -135,22 +135,23 @@
 
                             For Fingerprint Recognition System, we assume that we have a reference already stored for
                             matching the data (fingerprint sample) entered. (The code is written in C++) <br>
-                            STEP 1: We take input data from user. For taking input we include the header file OpenCV. It
+                            <p>
+                            STEP 1: We take input data from user. For taking input we include the header file <b><u>OpenCV</u></b>. It
                             scan’s the image and we can use its inbuilt functions required for our programme that makes
                             our code simpler and readable. <br>
                             STEP 2: We process the image to remove noise, and enhance the image for further processes.
-                            For it, we use functions like GaussianBlur (convolves the input image), EqualizeHit
+                            For it, we use functions like <u>GauusianBlur</u> (convolves the input image),<u> EqualizeHit</u>
                             (Enhancement of image is done). <br>
                             STEP 3: Further feature extraction process is carried out to extract features like ridge
-                            frequency, texture etc… with the help of mat class that represents a matrix on which various
+                            frequency, texture etc… with the help of <b>mat</b> class that represents a matrix on which various
                             operations are performed. Binary Image is stored in variable binaryImage in form of matrix.
-                            Further, Thresholding is performed using the function threshold and final result is stored
+                            Further, Thresholding is performed using the function <u>threshold</u> and final result is stored
                             in variable named binaryImage. For thresholding we follow OSTU method. <br>
                             STEP 4: Further, operations are done to enhance the fingerprint ridges. To achieve this task
-                            we use function getStructuringElement. Afterwards, we find counter in binary image, to
-                            recognize the boundaries of ridges using the function counter. <br>
+                            we use function <u>getStructuringElement</u>. Afterwards, we find counter in binary image, to
+                            recognize the boundaries of ridges using the function<u> counter</u>. <br>
                             STEP 5: Within these counters we find the Minutiae points, in which mathematical
-                            calculations of centroid is involved. This is also achieved using the function centroid. <br>
+                            calculations of centroid is involved. This is also achieved using the function<u> centroid</u>. <br>
                             STEP 6: Finally, a template of relevant information is created. All the operations performed
                             ahead will be carried out on this template. <br>
                             STEP 7: Now matching is performed. (We have assumed, that we have already stored reference
@@ -161,6 +162,7 @@
                             STEP 8: According to the results obtained from above step we make a decision, whether
                             fingerprint is matched or not! <br>
                             STEP 9: Finally, output is displayed on screen. <br>
+                            </p>
                         </div>
 
                     </div>
